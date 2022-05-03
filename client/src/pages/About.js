@@ -91,6 +91,7 @@ export default function About() {
     }
   };
 
+  
   return !openCrop ?
     (
     <Grid container spacing={1}>
