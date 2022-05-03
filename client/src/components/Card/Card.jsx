@@ -28,6 +28,9 @@ const ReadMore = ({ children }) => {
 };
 
 export default function TestimonialCard(props) {
+  let name;
+  if (props.to === false) name = props.Name;
+  else name = "To : " + props.Name;
   return (
     <Card sx={{ bgcolor: "white" }} className={styles.cardbackground}>
       <CardHeader
@@ -37,7 +40,7 @@ export default function TestimonialCard(props) {
           </IconButton>
         }
         // header="Name"
-        title="Name"
+        title={name}
         subheader={props.Email}
       />
 

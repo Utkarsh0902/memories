@@ -26,9 +26,10 @@ export default function CreateTest({ requestEmail, clearRequestEmail }) {
         from: user.Email,
         to: targetEmail,
         content: targetContent,
-        name: user.Name,
+        Name: user.Name,
       }
     );
+    // console.log(user);
     setIsSubmitted(response.data.result);
     setTargetContent("");
 

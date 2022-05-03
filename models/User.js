@@ -28,6 +28,7 @@ var User = new Schema({
   ],
   TestimonialsSent: [
     {
+      Name: String,
       To: String,
       Content: String,
     },

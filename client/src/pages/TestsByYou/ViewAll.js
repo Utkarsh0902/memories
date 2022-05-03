@@ -4,7 +4,7 @@ import AuthContext from "../../context/AuthContext";
 import { Grid } from "@mui/material";
 export default function ViewAll() {
   const { user } = useContext(AuthContext);
-
+  console.log(user);
   return (
     <Grid
       container
@@ -23,7 +23,7 @@ export default function ViewAll() {
       {user.TestimonialsSent.map((test) => {
         return (
           <Grid item p={2} xs={12} md={6}>
-            <Card Email={test.To} Content={test.Content} />
+            <Card Name={test.Name} Email={test.To} Content={test.Content} />
           </Grid>
         );
       })}

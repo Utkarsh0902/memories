@@ -34,7 +34,12 @@ export default function TestForYou() {
       {user.TestimonialsReceived.map((testimonial) => {
         return (
           <Grid item p={2} xs={12} md={6}>
-            <Card Email={testimonial.From} Content={testimonial.Content} />
+            <Card
+              Email={testimonial.From}
+              Content={testimonial.Content}
+              Name={testimonial.Name}
+              to={false}
+            />
           </Grid>
         );
       })}
