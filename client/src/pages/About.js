@@ -83,14 +83,7 @@ export default function About() {
 
   const photoUpload = (e) => {
     e.preventDefault();
-    // const reader = new FileReader();
     const file = e.target.files[0];
-    // reader.onloadend = () => {
-    //   setPhotoURL(reader.result); // this is for the actual image
-    //   setFile(e.target.files[0]);
-    // };
-    // reader.readAsDataURL(file);
-
     if (file) {
       setFile(file);
       setPhotoURL(URL.createObjectURL(file));
